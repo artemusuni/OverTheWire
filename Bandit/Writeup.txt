@@ -32,4 +32,7 @@ So basically -i allows us to provide a path to the certificate. Then find the pa
 Level 14 -> 15: Here we need to connect to a port 30000 on localhost where we need to paste and submit the lebel 14 password. 
 So we do:  nc localhost 30000 . Then we just past MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS and they give us a new password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 
-Level 15 -> 16: 
+Level 15 -> 16: On this level we need to set up a SSL/TLS encrypted communication usign openssl s_client. Here is the command: openssl s_client -connect localhost:30001
+Then you need to paste 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo and press enter. Then the service will give you the password for the next level: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+
+Level 16 -> 17: 
