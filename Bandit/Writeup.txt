@@ -26,4 +26,9 @@ Level 12 -> 13: This one forces you to learn how to unzip popular compression ty
 13. gunzip data8.gz
 The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
-Level 13 -> 14: 
+Level 13 -> 14: In this level we need to use ssh with a private key. The command is: ssh -i ./sshkey.private -p 2220 bandit14@bandit.labs.overthewire.org
+So basically -i allows us to provide a path to the certificate. Then find the password in /etc/bandit_pass/bandit14 which is MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+
+Level 14 -> 15: Here we need to connect to a port 30000 on localhost where we need to paste and submit the lebel 14 password. So we do:  nc localhost 30000 . Then we just past MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS and they give us a new password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
+Level 15 -> 16: 
